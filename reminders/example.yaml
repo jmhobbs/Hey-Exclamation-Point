@@ -1,0 +1,16 @@
+reminder:
+  name: "Example"
+  days:
+    monday:
+    tuesday:
+    wednesday:
+      except:
+        time: 1:00
+    thursday:
+    friday:
+    each:
+      start: 9:00
+      stop: 5:00
+      every: 1 hour
+    except:
+      time: 12:00
