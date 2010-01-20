@@ -1,6 +1,8 @@
 # What is Hey! #
 
-Hey is a very basic reminders system written in Python.
+Hey! is a very basic reminders system written in Python.
+
+Also, the name of the app is "Hey!", it's only called "Hey-Exclamation-Point" because Github won't take a "!" in a project title.
 
 # Why? #
 
