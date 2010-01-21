@@ -1,11 +1,13 @@
 reminder:
   name: "Example"
-  days:
+  text: "Oh noes!"
+  weekdays:
     monday:
+      at: 1:15
     tuesday:
     wednesday:
       except:
-        time: 1:00
+        at: 1:00
     thursday:
     friday:
     each:
@@ -13,4 +15,7 @@ reminder:
       stop: 5:00
       every: 1 hour
     except:
-      time: 12:00
+      at: 12:00
+  dates:
+    day: 3
+      at: 1:45
