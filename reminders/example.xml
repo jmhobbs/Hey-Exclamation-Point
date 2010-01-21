@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reminder>
+	<name>Example</name>
+	<alert type="dialog">
+		<text>Hey!</text>
+	</alert>
+	<group>
+		<weekday day="Monday">
+			<at>1:15</at>
+		</weekday>
+		<weekday day="Wednesday" />
+		<weekday day="Friday" />
+		<at type="interval">
+			<start>9:00</start>
+			<stop>18:00</stop>
+			<every hour="1" />
+			<except>17:00</except>
+		</at>
+	</group>
+	<group>
+		<dayofmonth day="5" />
+		<dayofmonth day="10">
+			<except>March</except>
+		</dayofmonth>
+		<at>12:30</at>
+	</group>
+</reminder>

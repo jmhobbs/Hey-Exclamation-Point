@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import yaml
 import sys
 
 def full_path ( relpath ):
@@ -29,10 +28,7 @@ class Reminder:
 			self.load_from_file( path )
 
 	def load_from_file ( self, path ):
-		# Open file, load yaml
-		f = open( path )
-		raw = yaml.load( f )
-		f.close()
+		# TODO: Load XML
 		self.name = raw['reminder']['name']
 		self.text = raw['reminder']['text']
 		for day in raw['reminder']['days']:
@@ -52,5 +48,5 @@ if __name__ == "__main__":
 
 	for root, dirs, files in os.walk( full_path( 'reminders/on/' ) ):
 			for file in files:
-				if '.yaml' == file[-5:]:
-					reminders[file[-5:]] = Reminder( root + file )
+				if '.xml' == file[-4:]:
+					reminders[file[-4:]] = Reminder( root + file )
